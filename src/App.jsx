@@ -1,14 +1,15 @@
 import React from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import MyCart from "./pages/MyCart";
 function App() {
   return (
-    <div className="bg-indigo-100 h-[100vh]">
-      <div className="h-20 bg-indigo-300 flex items-center justify-center">
-        <h1 className="font-extrabold text-lime-900 font-serif text-xl">
-          Shopping cart using Redux
-        </h1>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<MyCart />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
