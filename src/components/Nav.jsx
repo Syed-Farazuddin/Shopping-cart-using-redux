@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaShoppingBasket, FaHome } from "react-icons/fa";
 function Nav() {
   return (
-    <div className="py-4 cursor-pointer  px-8 bg-indigo-300 flex items-center justify-between max-w-7xl mx-auto">
+    <div className="py-4 cursor-pointer  px-8 bg-indigo-300 flex items-center justify-between">
       <div>
         <h1 className="font-extrabold text-lime-900 font-serif text-2xl hover:text-indigo-950">
           <Link to={"/"}>Shopping cart using Redux</Link>
